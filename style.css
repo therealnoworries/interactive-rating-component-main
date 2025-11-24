@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    /* border: 2px solid red; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(216, 12%, 8%);
+    font-family: "Overpass", sans-serif;
+}
+
+.rating-card {
+    /* border: 2px solid black; */
+    width: 100%;
+    padding: 2rem;
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(0, 100%, 100%);
+    max-width: 500px;
+    border-radius: 2rem;
+    /* text-align: center; */
+
+}
+
+.thank-you-card {
+    /* width: 80%; */
+    padding: 2rem;
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(0, 100%, 100%);
+    width: 450px;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.star-icon img {
+    background-color: hsl(216, 12%, 8%);
+    border-radius: 50%;
+    padding: 0.8rem;
+}
+
+.question {
+    margin-top: 30px;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.thank-you {
+    margin-top: 25px;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.rating-paragraph {
+    margin-top: 20px;
+    color: hsl(217, 12%, 63%);
+    font-weight: 500;
+    width: 425px;
+    line-height: 1.6rem;
+
+}
+
+.thank-you-paragraph {
+    margin-top: 20px;
+    margin-top: 20px;
+    color: hsl(217, 12%, 63%);
+    font-weight: 600;
+    width: 400px;
+    line-height: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.rating-options {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+}
+
+.rating-btn {
+    background-color: hsl(216, 12%, 8%);
+    color: hsl(0, 100%, 100%);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+
+    /* transition: background-color 0.3s ease; */
+}
+
+.rating-btn:hover {
+    background-color: hsl(25, 97%, 53%);
+}
+
+.rating-btn.active {
+    background-color: hsl(0, 100%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+.submit-btn {
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 2rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    background-color: hsl(0, 100%, 100%);
+}
+
+.thank-you-card img {
+    width: 200px;
+    margin-bottom: 1.5rem;
+}
+
+.selected-rating {
+    background-color: hsl(216, 12%, 8%);
+    color: hsl(25, 97%, 53%);
+    padding: 0.7rem 1rem;
+    border-radius: 2rem;
+    margin: 1rem 6rem;
+    font-size: 1rem;
+    width: 200px;
+}
+
+/* hidden shiuld none after styling*/
+/* .hidden {
+    display: none;
+} */
+@media screen and (max-width: 580px) {
+   .rating-card {
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 70%;
+   }
+   .rating-btn {
+    width: 45px;
+    height: 45px;
+   }
+   .rating-paragraph {
+    width:auto;
+   }
+   .submit-btn {
+   margin-top: 5px;
+   margin-bottom: 15px;
+   
+   }
+   .thank-you-card {
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 0 auto;
+   }
+   .thank-you-paragraph {
+    width: auto;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+   }
+   .selected-rating {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.9rem;
+    width: auto;
+   }
+   .thank-you-card img {
+    width: 110px;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+   }
+   .thank-you {
+    font-size: 1.25rem;
+   }
+}
