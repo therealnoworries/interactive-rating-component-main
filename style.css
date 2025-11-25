@@ -132,9 +132,9 @@ main {
 }
 
 /* hidden shiuld none after styling*/
-/* .hidden {
+.hidden {
     display: none;
-} */
+}
 @media screen and (max-width: 580px) {
    .rating-card {
     padding: 1rem;
